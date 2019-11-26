@@ -28,6 +28,7 @@ public class SnowMan{
   }
   void drawArms(){
 }
+}
  SnowMan test;
 void setup(){
   test = new SnowMan();
