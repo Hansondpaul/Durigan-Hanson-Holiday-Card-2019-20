@@ -7,6 +7,7 @@ public class Light{
    location = new PVector(x,y);
    shine = (255);
    counter = 0;
+   switchColor();
   }
   
   public void switchColor(){

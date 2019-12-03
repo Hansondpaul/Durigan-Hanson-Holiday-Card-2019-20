@@ -24,8 +24,10 @@ public class SnowStorm{
        flakes[i].x += vel.x;
        flakes[i].y += vel.y;
        if(flakes[i].y >= 400){
-         flakes[i].y = 25;
-         buildup++;
+         flakes[i].y = random(-25,25);
+             if(buildup < 16*50){
+               buildup++;
+             }
        }
     }
   }
@@ -35,6 +37,7 @@ public class SnowStorm{
     for(int i = 0; i < flakes.length; i++)
       ellipse(flakes[i].x,flakes[i].y,size[i],size[i]);
     rect(0,500-buildup/16,500,buildup/16);
+    
   }
   
 }
